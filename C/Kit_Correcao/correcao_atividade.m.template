@@ -1,0 +1,4 @@
+load D;
+
+feval(__PROG__, D)
+
