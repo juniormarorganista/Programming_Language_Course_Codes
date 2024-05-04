@@ -13,7 +13,7 @@ int main() {
     scanf("%d", &opcao);
 
     printf("Digite dois numeros:\n");
-    scanf("%f + %f", &num1, &num2);
+    scanf("%f %f", &num1, &num2);
 
     switch (opcao) {
         case 1:
