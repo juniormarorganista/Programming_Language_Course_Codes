@@ -1,0 +1,9 @@
+#PBS -N neutraLPTT
+#PBS -l ncpus=1
+#PBS -l walltime=336:00:00 
+
+
+cd /lustre/juniormr/LST_PTT/LST_PTT/
+
+matlab -nosplash -nodisplay -r "run('LST_spatial_channel_ptt_2D.m');exit;"
+
