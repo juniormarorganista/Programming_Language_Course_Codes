@@ -9,8 +9,6 @@
 ![Exemplos](https://img.shields.io/badge/Exemplos-176-success?style=for-the-badge)
 ![Foco](https://img.shields.io/badge/Foco-Python%20%7C%20SQL%20%7C%20Computa%C3%A7%C3%A3o%20Cient%C3%ADfica-orange?style=for-the-badge)
 
-<img src="./assets/recruiter_overview.png" alt="Visão geral do portfólio" width="100%" />
-
 </div>
 
 ---
