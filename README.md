@@ -68,9 +68,9 @@ Exemplo de método da bisseção, conectando código e análise numérica.
 ### Python
 ```bash
 cd Python
-pip install -r requirements.txt
-python Foundations/hello_world.py
-python OOP/bank_account.py
+pip3 install -r requirements.txt
+python3 Foundations/hello_world.py
+python3 OOP/bank_account.py
 ```
 
 ### SQL com SQLite
