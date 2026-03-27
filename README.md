@@ -1,6 +1,6 @@
 <div align="center">
 
-# Portfólio de Códigos — Linguagens de Programação e Computação Científica
+# Portfólio de Códigos - Linguagens de Programação e Computação Científica
 
 ### Repositório organizado para estudo, demonstração técnica e evolução contínua
 
