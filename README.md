@@ -112,14 +112,4 @@ make bisection
 - [`RECRUITER_GUIDE.md`](./RECRUITER_GUIDE.md) — leitura rápida para recrutadores e entrevistadores
 - [`COMO_EXECUTAR.md`](./COMO_EXECUTAR.md) — resumo de execução por linguagem
 
-## Perfil técnico que este portfólio comunica
-
-Este repositório conversa bem com perfis de:
-
-- programação em Python;
-- análise de dados e SQL;
-- fundamentos de desenvolvimento de software;
-- computação científica e métodos numéricos;
-- ensino e documentação técnica.
-
 Em bom português: aqui não tem só “Hello World” jogado. Tem estudo organizado, código reaproveitável e material com cara de portfólio.
