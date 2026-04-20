@@ -2,44 +2,32 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em C++.
+Evoluir de C para abstrações modernas com classes, STL e organização orientada a objetos.
 
-## Estrutura sugerida
+## O que já existe
 
-```text
-languages/cpp/
-├── README.md
-├── basics/
-├── exercises/
-└── projects/
-```
-
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- compilador g++ ou MSYS2/MinGW
-- VS Code com suporte a C/C++
+- calculadora em C++
 
 ## Ordem sugerida
 
-1. `basics/`
-2. `exercises/`
-3. `projects/`
+1. sintaxe básica
+2. funções
+3. referências
+4. classes e objetos
+5. encapsulamento
+6. STL
+7. arquivos
+8. mini projetos
 
-## Como executar exemplos
+## Como compilar no Windows com g++
 
 ```powershell
-g++ .\languages\cpp\projects\calculator\main.cpp .\languages\cpp\projects\calculator\calculator.cpp -o calculator_cpp.exe
-.\calculator_cpp.exe
+g++ .\languages\cpp\projects\calculator\main.cpp .\languages\cpp\projects\calculator\calculator.cpp -o calculadora_cpp.exe
+.\calculadora_cpp.exe
 ```
 
-## Próximos passos
+## Mini projetos sugeridos
 
-- acrescentar STL
-- incluir exercícios de POO
+- calculadora orientada a objetos
+- cadastro de alunos
+- agenda de contatos

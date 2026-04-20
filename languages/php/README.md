@@ -2,9 +2,9 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em PHP.
+Aprender PHP do zero até uma base sólida para web e scripts simples.
 
-## Estrutura sugerida
+## Estrutura do módulo
 
 ```text
 languages/php/
@@ -17,32 +17,33 @@ languages/php/
 └── mini_projects/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- PHP instalado no Windows
-
 ## Ordem sugerida
 
-1. `basics/`
-2. `functions/`
-3. `arrays/`
-4. `forms/`
-5. `oop/`
-6. `mini_projects/`
+1. sintaxe básica
+2. variáveis e tipos
+3. condicionais
+4. laços
+5. funções
+6. arrays
+7. formulários
+8. POO
+9. mini projetos
 
-## Como executar exemplos
+## Como executar no Windows
 
+### Script CLI
 ```powershell
-php .\languages\php\basics\hello.php
+php .\languages\php\basics\01_hello.php
 ```
 
-## Próximos passos
+### Servidor local simples
+```powershell
+php -S localhost:8000 -t .\languages\php\forms
+```
 
-- criar exercícios simples antes de entrar em framework
+## Mini projetos sugeridos
+
+- calculadora web
+- formulário de cadastro
+- conversor de temperaturas
+- lista de tarefas simples

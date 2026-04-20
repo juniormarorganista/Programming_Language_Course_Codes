@@ -2,7 +2,12 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em R.
+Desenvolver base para estatística, visualização e análise de dados.
+
+## Situação atual
+
+Ainda é a linguagem mais fraca do repositório em volume e organização.
+Boa notícia: dá para consertar sem drama.
 
 ## Estrutura sugerida
 
@@ -11,34 +16,16 @@ languages/r/
 ├── README.md
 ├── basics/
 ├── statistics/
-└── projects/
+└── plots/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- R instalado
-- opcionalmente RStudio
-
-## Ordem sugerida
-
-1. `basics/`
-2. `statistics/`
-3. `projects/`
-
-## Como executar exemplos
+## Como executar
 
 ```powershell
-Rscript .\languages\r\basics\comandos.r
+Rscript .\languages\r\basics\01_vetores.R
 ```
 
 ## Próximos passos
 
-- sair do modo arquivo solitário
-- criar exemplos reais com vetores, data frames e gráficos
+- criar módulo básico de vetores e data frames
+- criar gráficos com base R e ggplot2

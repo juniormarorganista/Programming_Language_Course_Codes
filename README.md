@@ -1,14 +1,13 @@
 # Programming Language Course Codes
 
-Repositório reorganizado para funcionar como trilha de estudo, portfólio técnico e base de prática contínua no GitHub.
+Repositório reorganizado para funcionar como **acervo preservado + trilha de estudo + portfólio técnico**.
 
-## Objetivos
+A ideia central é simples:
 
-- estudar linguagens de programação com organização real;
-- preservar os códigos antigos sem perder histórico;
-- documentar tudo o que for aprendido;
-- evoluir o repositório em módulos pequenos e bem versionados;
-- usar o GitHub de forma estratégica, sem transformar o projeto em bagunça.
+1. **não perder o material antigo**;
+2. **parar de acumular código solto**;
+3. **transformar o projeto em laboratório real de aprendizagem**;
+4. **usar o próprio fluxo do GitHub** para documentar evolução, treinar versionamento e fortalecer o perfil.
 
 ## Estrutura do projeto
 
@@ -16,11 +15,6 @@ Repositório reorganizado para funcionar como trilha de estudo, portfólio técn
 Programming_Language_Course_Codes/
 ├── README.md
 ├── docs/
-│   ├── COMO_USAR.md
-│   ├── ROADMAP.md
-│   ├── CONVENCOES.md
-│   ├── ACHIEVEMENTS_GITHUB.md
-│   └── assets/
 ├── languages/
 │   ├── python/
 │   ├── c/
@@ -33,28 +27,36 @@ Programming_Language_Course_Codes/
 │   ├── php/
 │   ├── java/
 │   └── frontend/
-│       ├── html_css/
-│       ├── javascript/
-│       ├── typescript/
-│       └── react/
 ├── shared/
-│   ├── templates/
-│   └── examples/
 ├── tests/
 └── scripts/
 ```
 
-## Organização pedagógica
+## Objetivos do repositório
 
-Cada linguagem deve evoluir com a mesma lógica:
+- estudar programação por linguagem e por tema;
+- documentar cada módulo de forma reproduzível;
+- organizar exercícios, miniaplicações e projetos;
+- criar histórico limpo de evolução com Git e GitHub;
+- reaproveitar o acervo antigo sem apagar trabalho já feito.
 
-1. fundamentos;
-2. exercícios;
-3. mini projetos;
-4. documentação;
-5. próximos passos.
+## Ordem sugerida de reconstrução
 
-## Linguagens atualmente contempladas
+1. preservar o estado bruto do projeto;
+2. reorganizar os diretórios com `git mv`;
+3. reconstruir a documentação principal;
+4. fortalecer Python, C, C++ e SQL;
+5. adicionar PHP, Java e Frontend;
+6. criar uma rotina de issues, branches, PRs e releases.
+
+## Leitura recomendada dentro do próprio repositório
+
+- `docs/COMO_USAR.md`
+- `docs/ROADMAP.md`
+- `docs/CONVENCOES.md`
+- `docs/ACHIEVEMENTS_GITHUB.md`
+
+## Linguagens já previstas
 
 - Python
 - C
@@ -66,39 +68,26 @@ Cada linguagem deve evoluir com a mesma lógica:
 - SQL
 - PHP
 - Java
-- Frontend (HTML/CSS, JavaScript, TypeScript e React)
+- Frontend (HTML, CSS, JavaScript, TypeScript e React)
 
-## Regras do jogo
+## Filosofia deste repositório
 
-- não apagar código antigo sem preservar histórico;
-- usar `git mv` sempre que possível;
-- um tema por branch;
-- um avanço por commit coerente;
-- documentação obrigatória em todo módulo novo.
+Este projeto não é só um “depósito de códigos”.
+Ele deve funcionar como:
 
-## Primeiros comandos
+- trilha de estudos;
+- repositório de consulta;
+- portfólio técnico;
+- laboratório de boas práticas;
+- base para commits consistentes e públicos no GitHub.
 
-Veja os guias:
+## Regra prática
 
-- [`docs/COMO_USAR.md`](docs/COMO_USAR.md)
-- [`docs/ROADMAP.md`](docs/ROADMAP.md)
-- [`docs/CONVENCOES.md`](docs/CONVENCOES.md)
-- [`docs/ACHIEVEMENTS_GITHUB.md`](docs/ACHIEVEMENTS_GITHUB.md)
+Sempre que criar um novo arquivo, responda no topo dele:
 
-## Fluxo sugerido
+- **Objetivo**
+- **Como executar**
+- **Conceitos treinados**
+- **Próximo exercício**
 
-```powershell
-git checkout main
-git pull origin main
-git checkout -b chore/rebuild-learning-repo
-```
-
-Depois execute o script:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\setup-restructure.ps1
-```
-
-## Observação importante
-
-O objetivo deste repositório não é parecer enorme. É parecer consistente. Repositório inchado sem trilha vira museu de gambiarra.
+Se não tiver isso, a chance de o arquivo virar código órfão é alta.

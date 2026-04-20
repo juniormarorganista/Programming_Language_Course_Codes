@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em Python.
+Concentrar fundamentos, exercícios, aplicações simples, automação e projetos maiores.
 
 ## Estrutura sugerida
 
@@ -12,37 +12,52 @@ languages/python/
 ├── basics/
 ├── exercises/
 ├── apps/
-├── scientific/
-└── projects/
+├── projects/
+└── scientific/
 ```
 
-## O que estudar aqui
+## O que já existe para reaproveitar
 
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
+- exercícios do Coursera
+- apps com Streamlit e Tkinter
+- scripts de gráficos
 
-## Pré-requisitos
+## Ordem de estudo sugerida
 
-- Python 3 instalado
-- VS Code com extensão Python
+1. sintaxe básica
+2. condicionais e laços
+3. funções
+4. strings e listas
+5. dicionários e tuplas
+6. arquivos
+7. orientação a objetos
+8. bibliotecas úteis
+9. apps simples
+10. mini projetos
 
-## Ordem sugerida
-
-1. `basics/`
-2. `exercises/`
-3. `apps/`
-4. `scientific/`
-5. `projects/`
-
-## Como executar exemplos
+## Como executar no Windows
 
 ```powershell
-python .\languages\python\basics\nome_do_arquivo.py
+python .\languages\python\basics\01_hello.py
 ```
+
+ou, se usar launcher:
+
+```powershell
+py .\languages\python\basics\01_hello.py
+```
+
+## Mini projetos sugeridos
+
+- calculadora CLI
+- agenda de contatos
+- analisador de notas
+- gerador de gráficos
+- conversor de unidades
 
 ## Próximos passos
 
-- documentar os exercícios do Coursera
-- separar miniapps de exemplos científicos
+- criar `basics/`
+- consolidar `exercises/`
+- separar `apps/` desktop e web
+- criar projetos guiados

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript e DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        button { padding: 0.7rem 1rem; }
+        #saida { margin-top: 1rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Primeiro exemplo com JavaScript</h1>
+    <p>Objetivo: alterar o DOM ao clicar em um botão.</p>
+
+    <button id="botao">Clique aqui</button>
+    <div id="saida">Nada aconteceu ainda.</div>
+
+    <script>
+        const botao = document.getElementById("botao");
+        const saida = document.getElementById("saida");
+
+        botao.addEventListener("click", () => {
+            const agora = new Date().toLocaleTimeString("pt-BR");
+            saida.textContent = `Botão clicado às ${agora}.`;
+        });
+    </script>
+</body>
+</html>

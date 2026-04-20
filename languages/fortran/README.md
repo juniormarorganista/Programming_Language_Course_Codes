@@ -2,7 +2,11 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em Fortran.
+Preservar e documentar códigos numéricos, com foco em computação científica.
+
+## O que já existe
+
+- cálculo de média em estatística
 
 ## Estrutura sugerida
 
@@ -11,27 +15,12 @@ languages/fortran/
 ├── README.md
 ├── basics/
 ├── statistics/
-└── numerical_methods/
+└── scientific/
 ```
 
-## O que estudar aqui
+## Como compilar
 
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- gfortran instalado
-
-## Ordem sugerida
-
-1. `basics/`
-2. `statistics/`
-3. `numerical_methods/`
-
-## Como executar exemplos
+Com `gfortran`:
 
 ```powershell
 gfortran .\languages\fortran\statistics\calcular_media.f90 -o calcular_media.exe
@@ -40,5 +29,5 @@ gfortran .\languages\fortran\statistics\calcular_media.f90 -o calcular_media.exe
 
 ## Próximos passos
 
-- remover executáveis versionados
-- documentar compilação no Windows
+- documentar exemplos numéricos simples
+- criar um módulo básico com entrada, laços e vetores

@@ -2,9 +2,9 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em Frontend.
+Construir base real em interface web, começando pelo básico antes de subir para abstrações maiores.
 
-## Estrutura sugerida
+## Estrutura do módulo
 
 ```text
 languages/frontend/
@@ -15,32 +15,36 @@ languages/frontend/
 └── react/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- navegador
-- Node.js para TypeScript e React
-
 ## Ordem sugerida
 
-1. `html_css/`
-2. `javascript/`
-3. `typescript/`
-4. `react/`
+1. HTML
+2. CSS
+3. JavaScript no navegador
+4. manipulação do DOM
+5. TypeScript
+6. React
 
-## Como executar exemplos
+## Execução local
 
-```text
-Arquivos HTML podem ser abertos no navegador. Projetos TypeScript/React exigem Node.js.
+### HTML/CSS/JavaScript
+Abra os arquivos `.html` no navegador ou use Live Server.
+
+### TypeScript
+```powershell
+npm install -g typescript
+cd .\languages\frontend\typescript
+tsc 01_tipos_basicos.ts
+node 01_tipos_basicos.js
 ```
 
-## Próximos passos
+### React sem build
+Abra o arquivo:
+- `languages/frontend/react/01_react_cdn.html`
 
-- começar por páginas estáticas
-- depois partir para DOM, TypeScript e React
+## Mini projetos sugeridos
+
+- landing page
+- calculadora web
+- lista de tarefas
+- cronômetro
+- formulário com validação

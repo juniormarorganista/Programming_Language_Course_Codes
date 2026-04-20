@@ -2,9 +2,9 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em Java.
+Construir base sólida em sintaxe, orientação a objetos, coleções e arquivos.
 
-## Estrutura sugerida
+## Estrutura do módulo
 
 ```text
 languages/java/
@@ -17,35 +17,30 @@ languages/java/
 └── mini_projects/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- JDK instalado
-- variável PATH configurada
-
 ## Ordem sugerida
 
-1. `basics/`
-2. `oop/`
-3. `collections/`
-4. `exceptions/`
-5. `files/`
-6. `mini_projects/`
+1. sintaxe básica
+2. variáveis e tipos
+3. condicionais
+4. laços
+5. métodos
+6. classes e objetos
+7. coleções
+8. exceções
+9. arquivos
+10. mini projetos
 
-## Como executar exemplos
+## Como executar no Windows
 
 ```powershell
-javac .\languages\java\basics\Main.java
-java -cp .\languages\java\basics Main
+cd .\languages\java\basics
+javac 01_HelloWorld.java
+java HelloWorld
 ```
 
-## Próximos passos
+## Mini projetos sugeridos
 
-- começar por console puro
-- deixar frameworks para depois
+- calculadora
+- cadastro de alunos
+- agenda simples
+- sistema de notas

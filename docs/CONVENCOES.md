@@ -1,19 +1,39 @@
-# Convenções do projeto
+# Convenções do repositório
 
 ## 1. Estrutura
 
-Cada linguagem deve ter um `README.md` próprio.
+Cada linguagem deve ter subpastas coerentes.
+Exemplo:
 
-Sempre que fizer sentido, use:
+```text
+languages/python/
+├── basics/
+├── exercises/
+├── apps/
+├── projects/
+└── scientific/
+```
 
-- `basics/`
-- `exercises/`
-- `projects/` ou `mini_projects/`
-- `scientific/` para material técnico/científico
+Nem toda linguagem precisa ter todas as subpastas, mas a organização deve fazer sentido didático.
 
-## 2. Documentação mínima por arquivo
+## 2. Nome de arquivos
 
-Adicionar no topo do código um bloco curto com:
+Use nome curto, descritivo e com prefixo numérico quando houver sequência de estudo.
+
+### Bom
+- `01_hello.php`
+- `02_arrays.php`
+- `03_condicionais.py`
+- `01_HelloWorld.java`
+
+### Ruim
+- `teste.py`
+- `codigo_novo_agora_sim.py`
+- `final_final2.c`
+
+## 3. Cabeçalho obrigatório
+
+Use este bloco no topo de novos arquivos:
 
 ```text
 Objetivo:
@@ -22,52 +42,39 @@ Conceitos treinados:
 Próximo exercício:
 ```
 
-## 3. Convenção de commits
+## 4. Commits
 
-Modelos recomendados:
+Prefira mensagens assim:
+- `feat: add initial java basics module`
+- `docs: improve roadmap and usage guide`
+- `refactor: reorganize python exercises`
+- `chore: remove compiled binaries`
 
-- `docs: update python learning guide`
-- `feat: add java basics exercises`
-- `refactor: reorganize sql module`
-- `chore: replace broad gitignore`
-- `fix: correct c calculator build instructions`
+## 5. Branches
 
-## 4. Convenção de branches
-
-Exemplos:
-
-- `chore/rebuild-learning-repo`
+Padrões sugeridos:
 - `feat/python-basics`
-- `feat/java-basics`
-- `feat/php-oop`
-- `feat/frontend-html-css`
-- `docs/update-roadmap`
+- `feat/sql-fundamentals`
+- `docs/rewrite-main-readme`
+- `refactor/reorganize-matlab-files`
 
-## 5. Convenção de README por linguagem
+## 6. Pull Requests
 
-Todo README deve responder:
+Cada PR deve responder:
+- o que foi feito;
+- por que foi feito;
+- como testar;
+- o que ficou pendente.
 
-- o que estudar aqui;
-- pré-requisitos;
-- ordem sugerida;
-- como executar exemplos;
-- mini projetos;
-- próximos passos.
+## 7. Critério de qualidade mínima
 
-## 6. O que não versionar
+Um módulo está aceitável quando tiver:
+- README do módulo;
+- pelo menos 3 exemplos progressivos;
+- instrução clara de execução;
+- próximo passo definido.
 
-Não versionar:
+## 8. Regra de ouro
 
-- executáveis compilados;
-- caches e diretórios temporários;
-- dependências instaladas localmente;
-- saídas de build.
-
-## 7. O que versionar
-
-Versionar:
-
-- código-fonte;
-- assets de documentação;
-- arquivos de instrução;
-- scripts de automação do próprio repositório.
+Este projeto deve ser legível até daqui seis meses.
+Se uma decisão atrapalha isso, está errada.

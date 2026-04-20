@@ -2,7 +2,12 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em C.
+Estudar programação estruturada, manipulação de memória, funções, ponteiros e compilação.
+
+## O que já existe
+
+- calculadora
+- kit de correção
 
 ## Estrutura sugerida
 
@@ -14,32 +19,28 @@ languages/c/
 └── projects/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- compilador GCC ou MinGW
-- VS Code com suporte a C/C++
-
 ## Ordem sugerida
 
-1. `basics/`
-2. `exercises/`
-3. `projects/`
+1. tipos e entrada/saída
+2. operadores
+3. condicionais
+4. laços
+5. funções
+6. vetores e matrizes
+7. ponteiros
+8. arquivos
+9. mini projetos
 
-## Como executar exemplos
+## Como compilar no Windows com gcc
 
 ```powershell
-gcc .\languages\c\projects\calculator\main.c .\languages\c\projects\calculator\calculator.c -o calculator.exe
-.\calculator.exe
+gcc .\languages\c\projects\calculator\main.c .\languages\c\projects\calculator\calculator.c -o calculadora.exe
+.\calculadora.exe
 ```
 
-## Próximos passos
+## Mini projetos sugeridos
 
-- documentar o projeto da calculadora
-- separar material acadêmico do material didático
+- calculadora
+- sistema de notas
+- cadastro simples em arquivo texto
+- jogo da adivinhação

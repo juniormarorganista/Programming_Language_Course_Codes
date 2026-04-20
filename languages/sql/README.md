@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em SQL.
+Estudar modelagem relacional, criação de tabelas, inserção, consultas e análise de dados.
 
 ## Estrutura sugerida
 
@@ -10,33 +10,36 @@ Esta área reúne materiais de estudo e prática em SQL.
 languages/sql/
 ├── README.md
 ├── basics/
-├── intermediate/
+├── joins/
+├── aggregation/
 └── mini_projects/
 ```
 
-## O que estudar aqui
-
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
-
-## Pré-requisitos
-
-- SQLite instalado ou extensão SQLite no VS Code
-
 ## Ordem sugerida
 
-1. `basics/`
-2. `intermediate/`
-3. `mini_projects/`
+1. `CREATE TABLE`
+2. `INSERT`
+3. `SELECT`
+4. `WHERE`
+5. `ORDER BY`
+6. agregações
+7. joins
+8. subqueries
+9. mini projeto
 
-## Como executar exemplos
+## Execução sugerida
+
+Use SQLite para começar sem sofrimento.
+Exemplo com `sqlite3`:
 
 ```powershell
 sqlite3 estudo.db < .\languages\sql\basics\01_schema.sql
+sqlite3 estudo.db < .\languages\sql\basics\02_inserts.sql
+sqlite3 estudo.db < .\languages\sql\basics\03_queries.sql
 ```
 
 ## Próximos passos
 
-- quebrar arquivo inicial em schema, inserts e queries
+- dividir o SQL antigo em partes menores
+- criar consultas progressivas
+- documentar resultados esperados
