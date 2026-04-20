@@ -1,45 +1,34 @@
 # SQL
 
-## Objetivo
+Esta trilha usa um banco SQLite para permitir estudo local sem instalar servidor pesado. A ideia é treinar modelagem, consultas, joins, agregações e subconsultas de forma incremental.
 
-Estudar modelagem relacional, criação de tabelas, inserção, consultas e análise de dados.
+## Estrutura
 
-## Estrutura sugerida
+- `basics/`: criação de tabela, inserções e consultas iniciais.
+- `joins/`: junções entre tabelas.
+- `aggregation/`: agrupamentos e métricas.
+- `subqueries/`: subconsultas.
+- `views/`: views reutilizáveis.
+- `exercises/`: lista de exercícios para praticar.
+- `datasets/`: observações sobre a base didática.
 
-```text
-languages/sql/
-├── README.md
-├── basics/
-├── joins/
-├── aggregation/
-└── mini_projects/
+## Como executar no Windows
+
+A forma mais prática desta trilha é usar o script Python que executa os arquivos `.sql` em um banco SQLite local.
+
+```powershell
+python .\scripts\run_sqlite_module.py --reset --file .\languages\sql\basics\01_schema.sql
+python .\scripts\run_sqlite_module.py --file .\languages\sql\basics\02_inserts.sql
+python .\scripts\run_sqlite_module.py --file .\languages\sql\basics\03_queries.sql
 ```
 
 ## Ordem sugerida
 
-1. `CREATE TABLE`
-2. `INSERT`
-3. `SELECT`
-4. `WHERE`
-5. `ORDER BY`
-6. agregações
-7. joins
-8. subqueries
-9. mini projeto
-
-## Execução sugerida
-
-Use SQLite para começar sem sofrimento.
-Exemplo com `sqlite3`:
-
-```powershell
-sqlite3 estudo.db < .\languages\sql\basics\01_schema.sql
-sqlite3 estudo.db < .\languages\sql\basics\02_inserts.sql
-sqlite3 estudo.db < .\languages\sql\basics\03_queries.sql
-```
-
-## Próximos passos
-
-- dividir o SQL antigo em partes menores
-- criar consultas progressivas
-- documentar resultados esperados
+1. `basics/01_schema.sql`
+2. `basics/02_inserts.sql`
+3. `basics/03_queries.sql`
+4. `joins/01_join_examples.sql`
+5. `aggregation/01_group_by.sql`
+6. `subqueries/01_subqueries.sql`
+7. `views/01_views.sql`
+8. `exercises/01_exercicios.md`
