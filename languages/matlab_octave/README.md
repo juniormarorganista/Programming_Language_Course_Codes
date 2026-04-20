@@ -2,7 +2,13 @@
 
 ## Objetivo
 
-Esta área reúne materiais de estudo e prática em MATLAB/Octave.
+Organizar material de cálculo numérico, álgebra linear computacional e projetos científicos.
+
+## O que já existe
+
+- métodos numéricos
+- Poisson 3D
+- projeto LST/PTT
 
 ## Estrutura sugerida
 
@@ -14,29 +20,19 @@ languages/matlab_octave/
 └── scientific_projects/
 ```
 
-## O que estudar aqui
+## Como executar no Octave
 
-- fundamentos da linguagem;
-- resolução de exercícios;
-- pequenos projetos;
-- documentação de execução.
+```powershell
+octave --no-gui
+```
 
-## Pré-requisitos
+Depois, no prompt do Octave:
 
-- GNU Octave ou MATLAB
-
-## Ordem sugerida
-
-1. `basics/`
-2. `numerical_methods/`
-3. `scientific_projects/`
-
-## Como executar exemplos
-
-```text
-Abra o script no Octave/MATLAB e execute no editor ou no terminal da ferramenta.
+```octave
+run('languages/matlab_octave/numerical_methods/eli_gauss.m')
 ```
 
 ## Próximos passos
 
-- separar claramente material didático de material de pesquisa
+- separar exercícios didáticos de códigos de pesquisa
+- criar README específico para cada projeto científico

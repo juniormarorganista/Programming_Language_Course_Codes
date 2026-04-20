@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React via CDN</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; background: #f7f7fb; }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            max-width: 600px;
+        }
+        button { padding: 0.7rem 1rem; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        function App() {
+            const [contador, setContador] = React.useState(0);
+
+            return (
+                <div className="card">
+                    <h1>Primeiro contato com React</h1>
+                    <p>Objetivo: entender componente, estado e evento.</p>
+                    <p>Cliques: <strong>{contador}</strong></p>
+                    <button onClick={() => setContador(contador + 1)}>
+                        Somar 1
+                    </button>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+</body>
+</html>

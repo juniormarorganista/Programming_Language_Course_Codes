@@ -1,77 +1,110 @@
 # Como usar este repositório
 
-## Propósito
+## Finalidade
 
-Este repositório foi reorganizado para servir simultaneamente como:
+Este repositório foi redesenhado para ser usado de três maneiras ao mesmo tempo:
 
-- trilha pessoal de aprendizagem;
-- base de revisão rápida;
-- portfólio técnico;
-- laboratório controlado para prática com Git e GitHub.
+1. **acervo preservado**: nada importante deve ser perdido;
+2. **trilha de estudo**: cada linguagem precisa ter uma progressão clara;
+3. **portfólio técnico**: o histórico do GitHub deve mostrar evolução real.
 
 ## Fluxo recomendado no Windows com VS Code
 
 ### 1. Abrir o projeto
-
-No PowerShell:
-
 ```powershell
 cd "C:\caminho\para\Programming_Language_Course_Codes"
 code .
 ```
 
-### 2. Criar a branch de reorganização
-
-```powershell
-git checkout main
-git pull origin main
-git checkout -b chore/rebuild-learning-repo
-```
-
-### 3. Executar a reorganização inicial
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\setup-restructure.ps1
-```
-
-### 4. Conferir o resultado
-
+### 2. Antes de mexer em qualquer coisa
 ```powershell
 git status
-powershell -ExecutionPolicy Bypass -File .\scripts\check-structure.ps1
+git branch
+git remote -v
 ```
 
-### 5. Salvar a etapa
+### 3. Criar uma branch por módulo
+Exemplos:
+```powershell
+git checkout -b feat/python-basics
+git checkout -b feat/sql-fundamentals
+git checkout -b feat/java-oop
+git checkout -b feat/frontend-html-css
+```
+
+### 4. Trabalhar em módulos pequenos
+Evite commit gigante e bagunçado.
+O ideal é um ciclo curto:
 
 ```powershell
 git add .
-git commit -m "refactor: reorganize repository into learning structure"
-git push -u origin chore/rebuild-learning-repo
+git commit -m "feat: add java basics module"
+git push -u origin feat/java-basics
 ```
 
-## Como estudar por linguagem
+### 5. Abrir Pull Request
+Abra um PR no GitHub e descreva:
+- o que foi feito;
+- por que foi feito;
+- como testar;
+- o que fica para a próxima etapa.
 
-Cada pasta de linguagem deve seguir esta ordem:
+## Como estudar
 
-1. `basics/`
-2. `exercises/`
-3. `projects/` ou `mini_projects/`
-4. `README.md`
+Cada pasta de linguagem deve ser organizada em camadas:
+- `basics/`
+- `exercises/`
+- `projects/`
+- `scientific/` quando fizer sentido
+- `mini_projects/` quando fizer sentido
 
-## Como documentar cada exemplo
+## Como nomear arquivos
 
-No topo de cada arquivo novo, incluir:
+Use prefixos numéricos para manter ordem didática:
+- `01_...`
+- `02_...`
+- `03_...`
 
-```text
-Objetivo:
-Como executar:
-Conceitos treinados:
-Próximo exercício:
-```
+Exemplos:
+- `01_hello.php`
+- `02_arrays.php`
+- `03_formulario.php`
+- `01_HelloWorld.java`
+- `02_Condicionais.java`
 
-## Como crescer o repositório sem bagunçar
+## Regra para não virar bagunça de novo
 
-- uma linguagem por vez;
-- um módulo por branch;
-- um pequeno conjunto de arquivos por commit;
-- README atualizado junto do código.
+Todo arquivo novo deve responder estas 4 perguntas no topo:
+
+- **Objetivo**
+- **Como executar**
+- **Conceitos treinados**
+- **Próximo exercício**
+
+## Ferramentas mínimas por linguagem
+
+### PHP
+- PHP instalado no Windows
+- VS Code com extensão PHP opcional
+
+### Java
+- JDK instalado
+- VS Code com Extension Pack for Java opcional
+
+### Frontend
+- navegador
+- VS Code
+- Live Server opcional
+
+### TypeScript
+- Node.js
+- TypeScript (`npm install -g typescript`)
+
+## O que não fazer
+
+- não commitar binário gerado sem motivo;
+- não misturar material de estudo com artefato compilado;
+- não criar nomes de arquivo vagos como `teste2_final_agora_vai.py`;
+- não jogar tudo na raiz da linguagem.
+
+Esse repositório já sofreu o bastante.

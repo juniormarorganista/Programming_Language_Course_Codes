@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial de Estudo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .hero {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 1rem;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frontend - módulo inicial</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Objetivo</h2>
+            <p>Treinar HTML e CSS com uma página simples, limpa e organizada.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>HTML</h3>
+                    <p>Estrutura semântica da página.</p>
+                </article>
+                <article class="card">
+                    <h3>CSS</h3>
+                    <p>Layout, espaçamento, responsividade básica.</p>
+                </article>
+                <article class="card">
+                    <h3>Próximo passo</h3>
+                    <p>Adicionar JavaScript para interatividade.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Abra este arquivo no navegador ou use Live Server no VS Code.</p>
+    </footer>
+</body>
+</html>

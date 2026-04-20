@@ -1,78 +1,95 @@
 # Roadmap do repositório
 
-## Fase 1 — Preservação e reorganização
+## Fase 0 — preservação
+- [ ] criar branch de acervo bruto
+- [ ] criar tag de snapshot
+- [ ] garantir que nada útil seja perdido
 
-- [x] congelar o estado atual em branch e tag;
-- [x] criar nova estrutura por linguagem;
-- [x] mover materiais antigos com histórico;
-- [x] corrigir `.gitignore`.
+## Fase 1 — reorganização estrutural
+- [ ] criar `docs/`, `languages/`, `shared/`, `tests/`, `scripts/`
+- [ ] mover arquivos antigos com `git mv`
+- [ ] remover binários indevidos versionados
+- [ ] ajustar `.gitignore`
 
-## Fase 2 — Documentação base
+## Fase 2 — documentação
+- [ ] README principal forte
+- [ ] READMEs por linguagem
+- [ ] convenções de nomenclatura
+- [ ] comandos para Windows
+- [ ] guia de Achievements/GitHub
 
-- [x] README principal refeito;
-- [x] documentação de uso;
-- [x] convenções do projeto;
-- [x] plano de uso do GitHub.
-
-## Fase 3 — Fortalecimento das linguagens existentes
+## Fase 3 — fortalecimento das linguagens já existentes
 
 ### Python
-- [ ] separar `basics`, `exercises`, `apps`, `scientific` e `projects`;
-- [ ] documentar exercícios do Coursera;
-- [ ] acrescentar mini projetos pequenos e úteis.
+- [ ] consolidar exercícios do Coursera
+- [ ] separar apps desktop e web
+- [ ] criar módulo de fundamentos
+- [ ] criar mini projetos guiados
 
 ### C
-- [ ] transformar calculadora em módulo bem documentado;
-- [ ] separar material acadêmico de material didático.
+- [ ] consolidar calculadora
+- [ ] documentar compilação
+- [ ] separar utilitários e mini projetos
 
 ### C++
-- [ ] reorganizar calculadora;
-- [ ] adicionar STL e POO básica.
+- [ ] consolidar calculadora
+- [ ] criar versão com classes
+- [ ] documentar compilação com g++
 
-### Fortran
-- [ ] preservar estatística;
-- [ ] separar fonte e binário;
-- [ ] incluir notas de compilação.
+### SQL
+- [ ] separar schema, inserts e queries
+- [ ] criar base SQLite de estudo
+- [ ] adicionar consultas progressivas
 
-### MATLAB/Octave
-- [ ] separar cálculo numérico de projeto científico;
-- [ ] documentar entradas e saídas dos scripts.
-
-### Mathematica
-- [ ] manter como acervo técnico;
-- [ ] descrever propósito de cada notebook.
-
-### R e SQL
-- [ ] sair do estado “quase vazio”;
-- [ ] criar exemplos mínimos realmente úteis.
-
-## Fase 4 — Novas linguagens
+## Fase 4 — novas linguagens
 
 ### PHP
-- [ ] sintaxe básica;
-- [ ] arrays;
-- [ ] funções;
-- [ ] formulários;
-- [ ] POO;
-- [ ] mini projeto.
+- [ ] básicos
+- [ ] funções
+- [ ] arrays
+- [ ] formulários
+- [ ] POO
+- [ ] mini projeto
 
 ### Java
-- [ ] fundamentos;
-- [ ] classes e objetos;
-- [ ] collections;
-- [ ] exceções;
-- [ ] arquivos;
-- [ ] mini projeto.
+- [ ] básicos
+- [ ] controle de fluxo
+- [ ] POO
+- [ ] coleções
+- [ ] exceções
+- [ ] arquivos
+- [ ] mini projeto
 
 ### Frontend
-- [ ] HTML/CSS;
-- [ ] JavaScript;
-- [ ] TypeScript;
-- [ ] React.
+- [ ] HTML/CSS
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] React
 
-## Fase 5 — GitHub como trilha de evolução
+## Fase 5 — fluxo GitHub
+- [ ] issue por módulo
+- [ ] branch por módulo
+- [ ] PR por módulo
+- [ ] release por marco
+- [ ] checklist de revisão
 
-- [ ] criar issues por módulo;
-- [ ] trabalhar com branches curtas;
-- [ ] abrir PRs descritivos;
-- [ ] gerar releases por marco.
+## Fase 6 — acabamento
+- [ ] padronizar cabeçalhos dos arquivos
+- [ ] revisar todos os READMEs
+- [ ] remover inconsistências
+- [ ] criar índice geral por dificuldade
+
+## Ordem sugerida de ataque
+1. Python
+2. SQL
+3. C
+4. C++
+5. Java
+6. PHP
+7. Frontend
+8. R
+9. Fortran
+10. MATLAB/Octave
+11. Mathematica
+
+A lógica é simples: primeiro o que mais ajuda no aprendizado geral e no uso profissional mais imediato.

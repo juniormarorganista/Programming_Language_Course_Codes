@@ -1,104 +1,48 @@
 # Programming Language Course Codes
 
-Repositório reorganizado para funcionar como trilha de estudo, portfólio técnico e base de prática contínua no GitHub.
+Repositório reorganizado para funcionar como trilha de estudo, laboratório de prática e vitrine técnica no GitHub.
 
-## Objetivos
+## Estrutura principal
 
-- estudar linguagens de programação com organização real;
-- preservar os códigos antigos sem perder histórico;
-- documentar tudo o que for aprendido;
-- evoluir o repositório em módulos pequenos e bem versionados;
-- usar o GitHub de forma estratégica, sem transformar o projeto em bagunça.
+- `docs/`: documentação geral, roadmap e convenções.
+- `languages/`: conteúdo por linguagem, separado por módulos.
+- `shared/`: templates e exemplos compartilhados.
+- `scripts/`: automações simples para Windows e validações.
 
-## Estrutura do projeto
+## Fase atual
 
-```text
-Programming_Language_Course_Codes/
-├── README.md
-├── docs/
-│   ├── COMO_USAR.md
-│   ├── ROADMAP.md
-│   ├── CONVENCOES.md
-│   ├── ACHIEVEMENTS_GITHUB.md
-│   └── assets/
-├── languages/
-│   ├── python/
-│   ├── c/
-│   ├── cpp/
-│   ├── fortran/
-│   ├── matlab_octave/
-│   ├── mathematica/
-│   ├── r/
-│   ├── sql/
-│   ├── php/
-│   ├── java/
-│   └── frontend/
-│       ├── html_css/
-│       ├── javascript/
-│       ├── typescript/
-│       └── react/
-├── shared/
-│   ├── templates/
-│   └── examples/
-├── tests/
-└── scripts/
-```
+Esta fase fortalece principalmente:
 
-## Organização pedagógica
+- `languages/python/`
+- `languages/sql/`
 
-Cada linguagem deve evoluir com a mesma lógica:
+A ideia é sair do modelo “arquivo solto” e entrar em “módulos com progressão”.
 
-1. fundamentos;
-2. exercícios;
-3. mini projetos;
-4. documentação;
-5. próximos passos.
+## Ordem sugerida de estudo nesta etapa
 
-## Linguagens atualmente contempladas
+1. `languages/python/basics`
+2. `languages/python/exercises/guided`
+3. `languages/python/projects`
+4. `languages/sql/basics`
+5. `languages/sql/joins`
+6. `languages/sql/aggregation`
+7. `languages/sql/subqueries`
+8. `languages/sql/views`
+9. `languages/sql/exercises`
 
-- Python
-- C
-- C++
-- Fortran
-- MATLAB/Octave
-- Mathematica
-- R
-- SQL
-- PHP
-- Java
-- Frontend (HTML/CSS, JavaScript, TypeScript e React)
+## Execução rápida
 
-## Regras do jogo
-
-- não apagar código antigo sem preservar histórico;
-- usar `git mv` sempre que possível;
-- um tema por branch;
-- um avanço por commit coerente;
-- documentação obrigatória em todo módulo novo.
-
-## Primeiros comandos
-
-Veja os guias:
-
-- [`docs/COMO_USAR.md`](docs/COMO_USAR.md)
-- [`docs/ROADMAP.md`](docs/ROADMAP.md)
-- [`docs/CONVENCOES.md`](docs/CONVENCOES.md)
-- [`docs/ACHIEVEMENTS_GITHUB.md`](docs/ACHIEVEMENTS_GITHUB.md)
-
-## Fluxo sugerido
+### Python
 
 ```powershell
-git checkout main
-git pull origin main
-git checkout -b chore/rebuild-learning-repo
+python .\languages\python\basics\01_hello.py
+python .\languages\python\projects\01_cli_gradebook.py
 ```
 
-Depois execute o script:
+### SQL com SQLite via Python
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\setup-restructure.ps1
+python .\scripts\run_sqlite_module.py --reset --file .\languages\sql\basics\01_schema.sql
+python .\scripts\run_sqlite_module.py --file .\languages\sql\basics\02_inserts.sql
+python .\scripts\run_sqlite_module.py --file .\languages\sql\basics\03_queries.sql
 ```
-
-## Observação importante
-
-O objetivo deste repositório não é parecer enorme. É parecer consistente. Repositório inchado sem trilha vira museu de gambiarra.
