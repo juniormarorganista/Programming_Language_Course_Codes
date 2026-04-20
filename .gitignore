@@ -1,59 +1,64 @@
-# Prerequisites
-*.d
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
 
-# files
-prg*
-*.png
-*.pdf
-*.dat
-*.bin
-*.txt
-*.vtk
-*.e*
-*.o*
+# ------------------------------
+# Node / Frontend
+# ------------------------------
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.vite/
 
-# Object files
+# ------------------------------
+# Java
+# ------------------------------
+*.class
+out/
+target/
+.gradle/
+
+# ------------------------------
+# C / C++ / Fortran
+# ------------------------------
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+*.mod
+*.a
+*.so
+*.dll
+*.lib
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
+# ------------------------------
+# MATLAB / Octave temporários
+# ------------------------------
+*.asv
+
+# ------------------------------
+# Sistema / editores
+# ------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ------------------------------
+# Arquivos locais opcionais
+# ------------------------------
+*.log
+*.tmp
