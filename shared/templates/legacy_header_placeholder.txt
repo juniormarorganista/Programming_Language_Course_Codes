@@ -1,0 +1,4 @@
+Objetivo: revisar e documentar este exemplo legado.
+Como executar: preencher manualmente de acordo com a linguagem e o ambiente.
+Conceitos treinados: preencher após revisão do arquivo.
+Próximo exercício: escolher um próximo passo coerente com este exemplo.
