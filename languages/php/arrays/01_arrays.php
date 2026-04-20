@@ -1,25 +1,16 @@
 <?php
 /*
-Objetivo: trabalhar com arrays indexados e associativos.
+Objetivo: trabalhar com arrays associativos.
 Como executar: php .\languages\php\arrays\01_arrays.php
-Conceitos treinados: arrays, foreach, chaves e valores.
-Próximo exercício: 02_funcoes_array.php
+Conceitos treinados: arrays e foreach.
+Próximo exercício: ../oop/01_student.php
 */
 
-$linguagens = ["Python", "C", "Java", "PHP"];
-
-echo "Linguagens cadastradas:\n";
-foreach ($linguagens as $indice => $linguagem) {
-    echo ($indice + 1) . ". $linguagem\n";
-}
-
-$perfil = [
-    "nome" => "Juniormar",
-    "objetivo" => "Aprender e reorganizar o repositório",
-    "foco" => "Portfólio + estudo"
+$alunos = [
+    ["nome" => "Ana", "nota" => 8.5],
+    ["nome" => "Bruno", "nota" => 5.9],
 ];
 
-echo "\nPerfil:\n";
-foreach ($perfil as $chave => $valor) {
-    echo ucfirst($chave) . ": $valor\n";
+foreach ($alunos as $aluno) {
+    echo $aluno["nome"] . " -> " . $aluno["nota"] . PHP_EOL;
 }

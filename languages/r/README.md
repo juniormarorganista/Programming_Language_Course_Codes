@@ -1,31 +1,34 @@
 # R
 
-## Objetivo
+Esta trilha organiza o estudo de R com foco em:
+- sintaxe básica;
+- vetores, fatores e data frames;
+- estatística descritiva;
+- gráficos;
+- pequenos projetos de análise.
 
-Desenvolver base para estatística, visualização e análise de dados.
+## Estrutura
 
-## Situação atual
+- `basics/`
+- `data/`
+- `statistics/`
+- `plots/`
+- `projects/`
 
-Ainda é a linguagem mais fraca do repositório em volume e organização.
-Boa notícia: dá para consertar sem drama.
+## Ordem sugerida
 
-## Estrutura sugerida
-
-```text
-languages/r/
-├── README.md
-├── basics/
-├── statistics/
-└── plots/
-```
+1. `basics`
+2. `data`
+3. `statistics`
+4. `plots`
+5. `projects`
 
 ## Como executar
 
-```powershell
-Rscript .\languages\r\basics\01_vetores.R
+```bash
+Rscript caminho/do/arquivo.R
 ```
 
-## Próximos passos
+## Meta
 
-- criar módulo básico de vetores e data frames
-- criar gráficos com base R e ggplot2
+Transformar exemplos soltos em trilha reaproveitável para estatística e análise de dados.

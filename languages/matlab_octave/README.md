@@ -1,38 +1,36 @@
 # MATLAB / Octave
 
-## Objetivo
+Esta trilha organiza o estudo de MATLAB/Octave com foco em:
+- fundamentos da linguagem;
+- operações matriciais;
+- métodos numéricos;
+- estatística básica;
+- mini projetos e reaproveitamento de material científico antigo.
 
-Organizar material de cálculo numérico, álgebra linear computacional e projetos científicos.
+## Estrutura
 
-## O que já existe
+- `basics/` — primeiros scripts e operações essenciais
+- `numerical_methods/` — métodos numéricos introdutórios
+- `statistics/` — estatística descritiva e manipulação vetorial
+- `projects/` — projetos pequenos e guiados
+- `scientific_projects/` — material científico reaproveitado do acervo
+- `research/` — espaço para experimentos mais avançados
 
-- métodos numéricos
-- Poisson 3D
-- projeto LST/PTT
+## Ordem sugerida
 
-## Estrutura sugerida
+1. `basics`
+2. `numerical_methods`
+3. `statistics`
+4. `projects`
+5. `scientific_projects`
 
-```text
-languages/matlab_octave/
-├── README.md
-├── basics/
-├── numerical_methods/
-└── scientific_projects/
+## Como executar
+
+No Octave:
+```bash
+octave --quiet --eval "run('caminho/do/arquivo.m')"
 ```
 
-## Como executar no Octave
+## Meta
 
-```powershell
-octave --no-gui
-```
-
-Depois, no prompt do Octave:
-
-```octave
-run('languages/matlab_octave/numerical_methods/eli_gauss.m')
-```
-
-## Próximos passos
-
-- separar exercícios didáticos de códigos de pesquisa
-- criar README específico para cada projeto científico
+Usar esta trilha tanto para revisão quanto para reaproveitar material técnico antigo com organização didática.

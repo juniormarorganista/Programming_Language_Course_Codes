@@ -1,10 +1,9 @@
 <?php
 /*
-Objetivo: exibir uma mensagem simples e introduzir a sintaxe básica do PHP.
+Objetivo: primeiro script em PHP.
 Como executar: php .\languages\php\basics\01_hello.php
-Conceitos treinados: echo, strings, comentários.
-Próximo exercício: 02_variaveis.php
+Conceitos treinados: sintaxe básica e echo.
+Próximo exercício: ../functions/01_functions.php
 */
 
-echo "Olá, mundo em PHP!\n";
-echo "Este arquivo inaugura o módulo de PHP.\n";
+echo "Olá, PHP!" . PHP_EOL;

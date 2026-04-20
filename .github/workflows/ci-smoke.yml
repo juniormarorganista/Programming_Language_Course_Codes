@@ -1,0 +1,48 @@
+name: ci-smoke
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-docs-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check repository structure
+        run: python tests/repo_structure_check.py
+
+      - name: Compile Python examples
+        run: |
+          python -m py_compile languages/python/basics/01_hello.py
+          python -m py_compile languages/python/projects/01_cli_gradebook.py
+          python -m py_compile scripts/run_sqlite_module.py
+
+  java-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Compile Java examples
+        run: |
+          javac languages/java/basics/01_HelloWorld.java
+          javac languages/java/oop/01_Student.java languages/java/oop/02_StudentDemo.java
+
+  php-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PHP syntax
+        run: |
+          php -l languages/php/basics/01_hello.php
+          php -l languages/php/oop/01_student.php

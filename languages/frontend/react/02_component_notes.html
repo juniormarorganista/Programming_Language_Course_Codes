@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Notes</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function NoteCard({ title, description }) {
+      return (
+        <div style={{border: '1px solid #ddd', borderRadius: '12px', padding: '1rem', marginBottom: '1rem'}}>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+      );
+    }
+
+    function App() {
+      return (
+        <div style={{fontFamily: 'Arial, sans-serif', maxWidth: '700px', margin: '2rem auto'}}>
+          <h1>Trilha Frontend</h1>
+          <NoteCard title="HTML/CSS" description="Estrutura, semântica e layout." />
+          <NoteCard title="JavaScript" description="Eventos, DOM e lógica de interface." />
+          <NoteCard title="React" description="Componentes reutilizáveis." />
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

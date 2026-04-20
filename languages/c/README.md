@@ -1,46 +1,29 @@
 # C
 
-## Objetivo
+A trilha de C foi organizada para fortalecer fundamentos de programação estruturada e baixo nível.
 
-Estudar programação estruturada, manipulação de memória, funções, ponteiros e compilação.
+## Estrutura
 
-## O que já existe
-
-- calculadora
-- kit de correção
-
-## Estrutura sugerida
-
-```text
-languages/c/
-├── README.md
-├── basics/
-├── exercises/
-└── projects/
-```
+- `basics/`: exemplos curtos e progressivos.
+- `projects/`: pequenos programas completos em terminal.
+- `projects/calculator/`: calculadora original reorganizada na fase estrutural.
 
 ## Ordem sugerida
 
-1. tipos e entrada/saída
-2. operadores
-3. condicionais
-4. laços
-5. funções
-6. vetores e matrizes
-7. ponteiros
-8. arquivos
-9. mini projetos
+1. `basics/01_hello.c`
+2. `basics/02_variaveis_tipos.c`
+3. `basics/03_condicionais_lacos.c`
+4. `basics/04_funcoes.c`
+5. `basics/05_arrays_ponteiros.c`
+6. `basics/06_strings_structs.c`
+7. `projects/01_student_stats.c`
 
-## Como compilar no Windows com gcc
+## Compilação no Windows
 
 ```powershell
-gcc .\languages\c\projects\calculator\main.c .\languages\c\projects\calculator\calculator.c -o calculadora.exe
-.\calculadora.exe
+powershell -ExecutionPolicy Bypass -File .\scriptsuild-c-module.ps1 -Source .\languages\casics_hello.c
 ```
 
-## Mini projetos sugeridos
+## Meta
 
-- calculadora
-- sistema de notas
-- cadastro simples em arquivo texto
-- jogo da adivinhação
+Entender bem memória, arrays, strings em C, funções e organização de arquivos.

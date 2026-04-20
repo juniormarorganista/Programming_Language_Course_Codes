@@ -1,50 +1,18 @@
 # Frontend
 
 ## Objetivo
-
-Construir base real em interface web, começando pelo básico antes de subir para abstrações maiores.
-
-## Estrutura do módulo
-
-```text
-languages/frontend/
-├── README.md
-├── html_css/
-├── javascript/
-├── typescript/
-└── react/
-```
+Estudar a base do frontend moderno sem pular etapas: HTML/CSS, JavaScript, TypeScript e React.
 
 ## Ordem sugerida
+1. `html_css/`
+2. `javascript/`
+3. `typescript/`
+4. `react/`
 
-1. HTML
-2. CSS
-3. JavaScript no navegador
-4. manipulação do DOM
-5. TypeScript
-6. React
+## Como executar
+Abra os arquivos HTML no navegador ou use a extensão Live Server no VS Code.
 
-## Execução local
-
-### HTML/CSS/JavaScript
-Abra os arquivos `.html` no navegador ou use Live Server.
-
-### TypeScript
+Para scripts JS via Node:
 ```powershell
-npm install -g typescript
-cd .\languages\frontend\typescript
-tsc 01_tipos_basicos.ts
-node 01_tipos_basicos.js
+node .\languagesrontend\javascript_array_methods.js
 ```
-
-### React sem build
-Abra o arquivo:
-- `languages/frontend/react/01_react_cdn.html`
-
-## Mini projetos sugeridos
-
-- landing page
-- calculadora web
-- lista de tarefas
-- cronômetro
-- formulário com validação

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador DOM</title>
+</head>
+<body>
+  <h1>Contador</h1>
+  <p id="value">0</p>
+  <button id="increment">Somar</button>
+
+  <script>
+    const value = document.getElementById('value');
+    const button = document.getElementById('increment');
+    let count = 0;
+
+    button.addEventListener('click', () => {
+      count += 1;
+      value.textContent = String(count);
+    });
+  </script>
+</body>
+</html>

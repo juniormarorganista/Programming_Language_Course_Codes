@@ -1,45 +1,63 @@
 # Python
 
-Esta trilha foi organizada para funcionar como material de estudo progressivo, sem descartar o acervo antigo do repositório.
+## Objetivo
 
-## Estrutura
+Concentrar fundamentos, exercícios, aplicações simples, automação e projetos maiores.
 
-- `basics/`: fundamentos em arquivos curtos e objetivos.
-- `exercises/guided/`: exercícios um pouco mais fechados, já com contexto de treino.
-- `exercises/coursera/`: preservação do material antigo vindo do acervo original.
-- `projects/`: projetos pequenos de terminal.
-- `scientific/`: ponte entre programação geral e análise de dados.
-- `apps/`: interface gráfica e apps já existentes no acervo reorganizado.
+## Estrutura sugerida
 
-## Ordem sugerida
+```text
+languages/python/
+├── README.md
+├── basics/
+├── exercises/
+├── apps/
+├── projects/
+└── scientific/
+```
 
-1. `basics/01_hello.py`
-2. `basics/02_variaveis_tipos.py`
-3. `basics/03_condicionais.py`
-4. `basics/04_lacos.py`
-5. `basics/05_funcoes.py`
-6. `basics/06_colecoes.py`
-7. `basics/07_strings.py`
-8. `basics/08_modulos.py`
-9. `basics/09_arquivos.py`
-10. `basics/10_excecoes.py`
-11. `exercises/guided/*`
-12. `projects/*`
-13. `scientific/*`
-14. `exercises/coursera/*`
+## O que já existe para reaproveitar
+
+- exercícios do Coursera
+- apps com Streamlit e Tkinter
+- scripts de gráficos
+
+## Ordem de estudo sugerida
+
+1. sintaxe básica
+2. condicionais e laços
+3. funções
+4. strings e listas
+5. dicionários e tuplas
+6. arquivos
+7. orientação a objetos
+8. bibliotecas úteis
+9. apps simples
+10. mini projetos
 
 ## Como executar no Windows
 
 ```powershell
 python .\languages\python\basics\01_hello.py
-python .\languages\python\projects\01_cli_gradebook.py
 ```
 
-## Meta desta trilha
+ou, se usar launcher:
 
-Cada arquivo deve ensinar um conceito específico. O padrão mínimo esperado é:
+```powershell
+py .\languages\python\basics\01_hello.py
+```
 
-- objetivo claro;
-- instrução de execução;
-- conceito treinado;
-- próximo passo.
+## Mini projetos sugeridos
+
+- calculadora CLI
+- agenda de contatos
+- analisador de notas
+- gerador de gráficos
+- conversor de unidades
+
+## Próximos passos
+
+- criar `basics/`
+- consolidar `exercises/`
+- separar `apps/` desktop e web
+- criar projetos guiados
