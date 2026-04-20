@@ -1,23 +1,21 @@
-## O que foi feito
+## O que este PR faz
 
-- [ ] reorganização estrutural
+Descreva objetivamente o escopo.
+
+## Tipo de mudança
+
+- [ ] feature
 - [ ] documentação
-- [ ] novos exemplos
-- [ ] correção de arquivos antigos
-- [ ] novo módulo de estudo
-
-## Por que isso foi feito
-
-Descreva o objetivo técnico e didático desta alteração.
-
-## Como testar
-
-Liste os comandos ou passos usados para validar a mudança.
+- [ ] refatoração
+- [ ] correção
+- [ ] manutenção
 
 ## Checklist
 
-- [ ] mantive a organização da pasta correta
-- [ ] documentei o que o arquivo faz
-- [ ] os exemplos executam
-- [ ] não removi material antigo sem justificativa
-- [ ] o commit está com mensagem clara
+- [ ] revisei os arquivos alterados
+- [ ] mantive o escopo do PR enxuto
+- [ ] atualizei documentação quando necessário
+- [ ] testei o que era aplicável
+- [ ] este PR está pronto para merge
+
+## Observações
